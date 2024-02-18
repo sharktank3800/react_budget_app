@@ -4,16 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Code to import Budget.js
 import Budget from './components/Budget';
-
 // Add code to import the other components here under
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal'
 import ExpenseList from './components/ExpenseList'
 import ExpenseItem from './components/ExpenseItem';
-
+import AllocationForm from './components/AllocationForm'
 
 import { AppProvider } from './context/AppContext';
-import ExpenseItem from './components/ExpenseItem';
 
 const App = () => {
     return (
@@ -52,7 +50,9 @@ const App = () => {
                         }        
 
                         {
-                            /* Add AllocationForm component here under */
+                            <div>
+                                <AllocationForm />
+                            </div>
                         }        
 
                 </div>
